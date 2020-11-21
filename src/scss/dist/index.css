@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
+@import "~normalize.css";
+.excel__formula {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 74px;
+  border-bottom: 1px solid #eee;
+  height: 24px;
+}
+.excel__formula .input {
+  width: 100%;
+  padding: 4px;
+  outline: none;
+  height: 100%;
+  font-size: 14px;
+  color: #000;
+}
+.excel__formula .info {
+  font-style: italic;
+  font-size: 18px;
+  min-width: 40px;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+
+.excel__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  padding: 8px 4px 0;
+}
+.excel__header .input {
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid transparent;
+  height: 20px;
+  outline: none;
+  padding: 2px 7px;
+  color: #000;
+  margin: 0;
+  border-radius: 2px;
+  min-width: 1px;
+}
+.excel__header .input:hover {
+  border: 1px solid red;
+}
+.excel__header .input:focus {
+  border: 1px solid #1a73e8;
+}
+.excel__header .button {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+}
+.excel__header .button > i {
+  font-size: 18px;
+}
+.excel__header .button:active, .excel__header .button.active {
+  color: red;
+}
+.excel__header .button:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.excel__table {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow-x: auto;
+  top: 98px;
+  padding-bottom: 2px;
+}
+.excel__table .row {
+  display: flex;
+  min-height: 20px;
+  height: 24px;
+}
+.excel__table .row-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border: 1px solid #eee;
+  background: #f8f9fa;
+  border-top: none;
+  background: #f8f9fa;
+}
+.excel__table .row-data {
+  display: flex;
+}
+.excel__table .column {
+  min-width: 40px;
+  font-size: 14px;
+  width: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  background: #f8f9fa;
+}
+.excel__table .cell {
+  width: 120px;
+  min-width: 40px;
+  height: 100%;
+  border: 1px solid #e2e3e3;
+  white-space: nowrap;
+  padding: 5px;
+  border-top: 0;
+  border-left: 0;
+  color: #111;
+}
+.excel__table .cell.selected {
+  border: none;
+  outline: 2px solid blue;
+  z-index: 2;
+}
+
+.excel__toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 34px;
+  height: 40px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+.excel__toolbar .button {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+}
+.excel__toolbar .button > i {
+  font-size: 18px;
+}
+.excel__toolbar .button:active, .excel__toolbar .button.active {
+  color: red;
+}
+.excel__toolbar .button:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.excel {
+  position: relative;
+  color: #888;
+  font-size: 0.8rem;
+  max-width: 100%;
+  height: 100%;
+}
